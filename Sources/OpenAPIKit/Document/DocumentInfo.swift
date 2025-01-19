@@ -52,9 +52,9 @@ extension OpenAPI.Document {
         ///
         /// See [OpenAPI Contact Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#contact-object).
         public struct Contact: Equatable, CodableVendorExtendable {
-            public let name: String?
-            public let url: URL?
-            public let email: String?
+            public var name: String?
+            public var url: URL?
+            public var email: String?
 
             /// Dictionary of vendor extensions.
             ///
@@ -80,8 +80,8 @@ extension OpenAPI.Document {
         ///
         /// See [OpenAPI License Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#license-object).
         public struct License: Equatable, CodableVendorExtendable {
-            public let name: String
-            public let identifier: Identifier?
+            public var name: String
+            public var identifier: Identifier?
 
             /// Dictionary of vendor extensions.
             ///

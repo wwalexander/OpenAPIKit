@@ -192,8 +192,8 @@ extension OpenAPI.Document {
     /// A `Route` is the combination of a path (where the route lives)
     /// and a path item (the definition of the route).
     public struct Route: Equatable {
-        public let path: OpenAPI.Path
-        public let pathItem: OpenAPI.PathItem
+        public var path: OpenAPI.Path
+        public var pathItem: OpenAPI.PathItem
 
         public init(
             path: OpenAPI.Path,
